@@ -1,0 +1,35 @@
+.Container{
+    width: 100%;
+    background:url("../../assets/images/CompaniesBg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .Section{
+        max-width: 1300px;
+        height: fit-content;
+        margin: auto;
+        padding-top: 30px;
+        .Title{
+            h2{
+                font-size: 47px;
+                color: #1A2251;
+                margin: 0;
+                font-weight: 400;
+                span{
+                    font-weight: 600;
+                }
+            }
+        }
+        .Cards{
+            padding: 100px 0px;
+            padding-top: 75px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 40px;
+            width: 100%;
+            height: fit-content;
+            
+        }
+    }
+}

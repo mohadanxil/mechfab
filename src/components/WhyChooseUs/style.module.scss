@@ -1,0 +1,106 @@
+.Container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    height: 42vw;
+    background:url("../../assets/images/WhyChooseBanner.png");
+    background: linear-gradient(90deg, #31AEDA 0%, #53AF84 100%);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    .Shape{
+        // width: 250px;
+        // height: 250px;
+        // position: absolute;
+        // background: #C5E6D5;
+        // z-index: 99;
+        // left: 0;
+        // top: 0;
+        // transform: rotate(45deg) translateX(-50%);
+        width: 550px;
+        height: 550px;
+        position: absolute;
+        background: #C5E6D5;
+        z-index: 99;
+        left: 0;
+        top: 0;
+        transform: rotate(19deg) translate(-84%,7%);
+    }
+    .ImageOverlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: linear-gradient(90deg, #31AEDA 0%, #53AF84 100%);
+        opacity: 1;
+    background:url("../../assets/images/WhyChooseBanner.png");
+
+        z-index: 9;
+    }
+    .Section{
+        position: relative;
+        z-index: 99;
+        width: 100%;
+        height: 100%;
+        max-width: 1300px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .Left{
+            padding: 100px 0px;
+            height: 100%;
+            width: 70%;
+            position: relative;
+            .Image{
+                position: absolute;
+                left: 25%;
+                top: 20%;
+                z-index: 999;
+                .Content{
+                    max-width: 550px;
+                    width: 100%;
+                    height: 400px;
+                    position: absolute;
+                    top: 0%;
+                    transform:translate(20%,35%);
+                    left: 0;
+                    p{
+                        font-size: 18px;
+                        color: #fff;
+                    }
+                }
+                img{
+                    opacity: 0.8;
+
+                }
+            
+                .Title{
+                    font-size: 50px;
+                    color: #fff;
+                    font-weight: 700;
+                position: absolute;
+                top: 0%;
+                transform:translate(20%,-15%);
+                left: 0;
+
+    
+                }
+            }
+        }
+        .Right{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            img{
+                width: fit-content;
+                position: absolute;
+                height: 100%;
+                top: 50%;
+                right: 0%;
+                transform: translate(16%,-50%);
+                object-fit: cover;
+            }
+        }
+    }
+}

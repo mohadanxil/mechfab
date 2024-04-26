@@ -1,0 +1,856 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loader2{
+            display: none;
+        }
+        .filte_sections input{
+            user-select: none;
+        }
+      body {
+        font-family:"Dubai", Sans-serif;
+        background-color: #f7f7f7;
+      }
+		
+		.filte_sections img.filter_book_now-arrow {
+    width: 16px;
+    margin-right: 3px;
+}
+    
+      .filter_controls {
+        width: 80vw;
+    margin: auto;
+        padding: 39px 90px;
+        display: grid;
+        flex-wrap: wrap;
+		border-radius: 10px;
+        justify-content:center;
+        margin-bottom: 40px;
+        background-color: #fff;
+        align-items: flex-end;
+        margin-top: 0px;
+        grid-template-columns: repeat(4,1fr);
+    }
+    
+      .filte_sections label {
+        font-size: 12px;
+        line-height: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .filte_sections label select {
+        color: #000000c2;
+        padding: 17px 42px;
+        padding-left: 17px;
+        min-width: 330px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: transparent;
+        background-image: url('');
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-position-y: 50%;
+        border: 1px solid #dbdfe4;
+        width: 100%;
+      }
+      .filter_controls button {
+        border-radius: 0;
+        background-color: #a6248c;
+        padding: 17px 75px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 19px;
+        line-height: 27px;
+        height: 51px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .filter_controls button i {
+        transform: rotate(90deg);
+        margin-left: 10px;
+      }
+      .filter_controls label:first-child select {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-right: none;
+      }
+      .filter_controls label:nth-child(2) select {
+        border-right: none;
+      }
+      .filter_yachtList {
+        list-style-type: none;
+        padding: 0;
+      }
+    
+      .filter_yachtList li {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+        transition: background-color 0.3s ease;
+      }
+    
+      
+      .filter_yatchList {
+        padding: 0px 160px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        min-height: 475px;
+      }
+      .filter_yatch {
+        border-radius: 13px;
+        overflow: hidden;
+      }
+      .filter_image {
+        width: 100%;
+        height: 100%;
+      }
+      .filter_contents {
+          padding: 15px 20px;
+          padding-top: 22px;
+        background-color: #fff;
+      }
+      .filter_title {
+        font-size: 17px;
+        line-height: 22px;
+        font-weight: 600;
+        color: #000;
+      }
+      .filter_price {
+          display:flex;
+        color: #17a2b8;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 14px !important;
+        /* margin-top: 5px; */
+        margin-top: 0;
+      }
+      .filter_price span {
+        color: #000;
+        font-size: 16px;
+        margin-left: 6px;
+      }
+      .filter_ship_details {
+/*         display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 9px; */
+		      align-content: space-around;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 10%; */
+      }
+      .filter_ship_details div {
+        text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+    /* background: red; */
+    width: fit-content;
+    justify-content: center;
+    border: 1px solid #0000001a;
+    padding: 5px 10px;
+    margin: 5px 0px;
+    border-radius: 5px;
+    min-width: 117px;
+      }
+      .filter_ship_details div img {
+        width: 23px;
+      }
+      .filter_ship_details div:first-child img {
+        width: 25px;
+      }
+      .filter_ship_details div:nth-child(3) img {
+        width: 18px;
+        padding-right: 4px;
+      }
+      .filter_ship_details div:last-child img {
+        width: 18px;
+        padding-right: 4px;
+      }
+      .filter_ship_details div:nth-child(2) {
+        text-align: right;
+      }
+      .filter_ship_details div:last-child {
+        text-align: right;
+/* 		  width:87%; */
+      }
+      .filter_divider {
+        width: 100%;
+        background-color: #0000001a;
+        height: 1px;
+        margin: 14px 0px;
+      }
+      .filter_actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+      .filter_actions button,.filter_actions a {
+        border-radius: 10px;
+        font-weight: 400;
+        border: none;
+        color: #fff;
+        text-decoration: none !important;
+        width: 45%;
+        text-align: center;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        white-space:nowrap;
+        width: 100%;
+      }
+       
+      .filter_book_now, .filter_book_now:hover {
+        background-color: #30a1cb;
+      }
+      .filter_whatsapp,.filter_whatsapp:hover {
+      width: 100%;
+            background-color: #25d366;
+   
+      }
+		.filter_whatsapp:hover {
+          background-color: #952A7A;
+			color: #fff;
+			transition: all 0.5s ease-in-out;
+   
+      }
+      .filter_guests,.filter_crew{
+        justify-content: flex-end;
+      }
+      .filte_sections span {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+      }
+      .filte_sections span img,
+      .filte_sections label img {
+        width: 26px;
+      }
+      @media(min-width:1300px){
+        .filte_sections label select{
+            min-width: 100%;
+        }
+      }
+     
+      @media(max-width:765px){
+        .filte_sections{
+            padding: 0px 39px;
+        }
+        .filter_yatchList {
+            padding: 0px 0px;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+        }
+        .filter_controls{
+            margin-top: 30px;
+            border-radius: 15px;
+            padding: 20px 15px;
+            /* padding-top: 0; */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            }
+            .filter_controls label{
+                width: 100%;
+            }
+            .filter_controls label:nth-child(2) select,.filter_controls label:first-child select{
+                border-right: 1px solid #dbdfe4;
+  
+            }
+            .filter_controls label select{
+                width: 100%;
+                border-radius: 10px;
+                min-width: 100%;
+            }
+            .filter_controls button{
+                width: 100%;
+                margin-top: 21px;
+                border-radius: 10px;
+            }
+            .filter_actions button{
+                padding: 12px 50px;
+            }
+      }
+      @media(max-width:480px){
+          .filte_sections{
+              padding: 0px 15px;
+          }
+          .filter_yatchList {
+              padding: 0px 0px;
+              display: grid;
+              grid-template-columns: repeat(1, 1fr);
+              gap: 20px;
+          }
+          .filter_controls{
+            margin-top: 30px;
+    border-radius: 15px;
+    padding: 20px 15px;
+    /* padding-top: 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+              }
+              .filter_controls label{
+                  width: 100%;
+                  margin-top: 10px;
+              }
+              .filter_controls label:nth-child(2) select,.filter_controls label:first-child select{
+                  border-right: 1px solid #dbdfe4;
+    
+              }
+              .filter_controls label select{
+                  width: 100%;
+                  border-radius: 10px;
+                  min-width: 100%;
+              }
+              .filter_controls button{
+                  width: 100%;
+                  margin-top: 21px;
+                  border-radius: 10px;
+              }
+              .filter_actions button{
+                  padding: 12px 15px;
+                  white-space: nowrap;
+                  width: 45%;
+              }
+        }
+        .filter_ship_details div{
+            font-size: 14px;
+
+        }
+        @media(max-width:1300px) and (min-width:765px){
+            .filter_controls label{
+                margin-top: 10px;
+            }
+          .filte_sections{
+              padding: 0px 39px;
+          }
+          .filter_yatchList {
+              padding: 0px 0px;
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              gap: 20px;
+          }
+          .filter_controls{
+                  margin-top: 30px;
+                  border-radius: 15px;
+                  padding: 20px 35px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+              }
+              .filter_controls label{
+                  width: 100%;
+              }
+              .filter_controls label:nth-child(2) select,.filter_controls label:first-child select{
+                  border-right: 1px solid #dbdfe4;
+    
+              }
+              .filter_controls label select{
+                  width: 100%;
+                  border-radius: 10px;
+                  min-width: 100%;
+              }
+              .filter_controls label:first-child span img{
+                width: 22px;
+              }
+              .filter_controls label:nth-child(2) span img{
+                width: 18px;
+              }
+              .filter_controls label:last-child span img{
+                width: 25px;
+              }
+              .filter_controls button{
+                  width: 100%;
+                  margin-top: 21px;
+                  border-radius: 10px;
+              }
+              .filter_actions button{
+                  padding: 12px 50px;
+              }
+        }
+
+        @media(max-width:1300px) and (min-width:1000px){
+            .filter_yatchList {
+                padding: 0px 0px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+        }
+        @media(max-width:800px) and (min-width:680px){
+            .filter_yatchList {
+                padding: 0px 0px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+        @media(max-width:600px){
+            .filter_yatchList {
+                padding: 0px 0px;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+            }
+        }
+        .filter_controls label:first-child span img{
+            width: 22px;
+          }
+          .filter_controls label:nth-child(2) span img{
+            width: 18px;
+          }
+          .filter_controls label:last-child span img{
+            width: 25px;
+          }
+          @media(max-width:350px){
+            .filter_actions {
+                
+                flex-direction: column;
+                width: 100%;
+                justify-content: center;
+              }
+              .filter_actions button,.filter_actions a {
+                width: 100%;
+                margin-top: 15px;
+              }
+          }
+          .loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  /* position: relative; */
+  text-indent: -9999em;
+  animation: mulShdSpin 1.1s infinite ease;
+  transform: translateZ(0);
+}
+.loader2{
+    display: none;
+    position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  /* position: relative; */
+  animation: mulShdSpin 1.1s infinite ease;
+  transform: translateZ(0);
+}
+@keyframes mulShdSpin {
+  0%,
+  100% {
+    box-shadow: 0em -2.6em 0em 0em #a6248c, 1.8em -1.8em 0 0em rgba(166 ,36 ,140 , 0.2), 2.5em 0em 0 0em rgba(166 ,36 ,140 , 0.2), 1.75em 1.75em 0 0em rgba(166 ,36 ,140 , 0.2), 0em 2.5em 0 0em rgba(166 ,36 ,140 , 0.2), -1.8em 1.8em 0 0em rgba(166 ,36 ,140 , 0.2), -2.6em 0em 0 0em rgba(166 ,36 ,140 , 0.5), -1.8em -1.8em 0 0em rgba(166 ,36 ,140 , 0.7);
+  }
+  12.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(166 ,36 ,140 , 0.7), 1.8em -1.8em 0 0em #a6248c, 2.5em 0em 0 0em rgba(166 ,36 ,140 , 0.2), 1.75em 1.75em 0 0em rgba(166 ,36 ,140 , 0.2), 0em 2.5em 0 0em rgba(166 ,36 ,140 , 0.2), -1.8em 1.8em 0 0em rgba(166 ,36 ,140 , 0.2), -2.6em 0em 0 0em rgba(166 ,36 ,140 , 0.2), -1.8em -1.8em 0 0em rgba(166 ,36 ,140 , 0.5);
+  }
+  25% {
+    box-shadow: 0em -2.6em 0em 0em rgba(166 ,36 ,140 , 0.5), 1.8em -1.8em 0 0em rgba(166 ,36 ,140 , 0.7), 2.5em 0em 0 0em #a6248c, 1.75em 1.75em 0 0em rgba(166 ,36 ,140 , 0.2), 0em 2.5em 0 0em rgba(166 ,36 ,140 , 0.2), -1.8em 1.8em 0 0em rgba(166 ,36 ,140 , 0.2), -2.6em 0em 0 0em rgba(166 ,36 ,140 , 0.2), -1.8em -1.8em 0 0em rgba(166 ,36 ,140 , 0.2);
+  }
+  37.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(166 ,36 ,140 , 0.2), 1.8em -1.8em 0 0em rgba(166 ,36 ,140 , 0.5), 2.5em 0em 0 0em rgba(166 ,36 ,140 , 0.7), 1.75em 1.75em 0 0em #a6248c, 0em 2.5em 0 0em rgba(166 ,36 ,140 , 0.2), -1.8em 1.8em 0 0em rgba(166 ,36 ,140 , 0.2), -2.6em 0em 0 0em rgba(166 ,36 ,140 , 0.2), -1.8em -1.8em 0 0em rgba(166 ,36 ,140 , 0.2);
+  }
+  50% {
+    box-shadow: 0em -2.6em 0em 0em rgba(166 ,36 ,140 , 0.2), 1.8em -1.8em 0 0em rgba(166 ,36 ,140 , 0.2), 2.5em 0em 0 0em rgba(166 ,36 ,140 , 0.5), 1.75em 1.75em 0 0em rgba(166 ,36 ,140 , 0.7), 0em 2.5em 0 0em #a6248c, -1.8em 1.8em 0 0em rgba(166 ,36 ,140 , 0.2), -2.6em 0em 0 0em rgba(166 ,36 ,140 , 0.2), -1.8em -1.8em 0 0em rgba(166 ,36 ,140 , 0.2);
+  }
+  62.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(166 ,36 ,140 , 0.2), 1.8em -1.8em 0 0em rgba(166 ,36 ,140 , 0.2), 2.5em 0em 0 0em rgba(166 ,36 ,140 , 0.2), 1.75em 1.75em 0 0em rgba(166 ,36 ,140 , 0.5), 0em 2.5em 0 0em rgba(166 ,36 ,140 , 0.7), -1.8em 1.8em 0 0em #a6248c, -2.6em 0em 0 0em rgba(166 ,36 ,140 , 0.2), -1.8em -1.8em 0 0em rgba(166 ,36 ,140 , 0.2);
+  }
+  75% {
+    box-shadow: 0em -2.6em 0em 0em rgba(166 ,36 ,140 , 0.2), 1.8em -1.8em 0 0em rgba(166 ,36 ,140 , 0.2), 2.5em 0em 0 0em rgba(166 ,36 ,140 , 0.2), 1.75em 1.75em 0 0em rgba(166 ,36 ,140 , 0.2), 0em 2.5em 0 0em rgba(166 ,36 ,140 , 0.5), -1.8em 1.8em 0 0em rgba(166 ,36 ,140 , 0.7), -2.6em 0em 0 0em #a6248c, -1.8em -1.8em 0 0em rgba(166 ,36 ,140 , 0.2);
+  }
+  87.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(166 ,36 ,140 , 0.2), 1.8em -1.8em 0 0em rgba(166 ,36 ,140 , 0.2), 2.5em 0em 0 0em rgba(166 ,36 ,140 , 0.2), 1.75em 1.75em 0 0em rgba(166 ,36 ,140 , 0.2), 0em 2.5em 0 0em rgba(166 ,36 ,140 , 0.2), -1.8em 1.8em 0 0em rgba(166 ,36 ,140 , 0.5), -2.6em 0em 0 0em rgba(166 ,36 ,140 , 0.7), -1.8em -1.8em 0 0em #a6248c;
+  }
+}
+.filte_sections{
+    min-height: 775px;
+
+    height: 100%;
+    position: relative;
+}
+.filter_image_div{
+    height: 275px;
+}
+.filter_image_div img{
+    object-fit: cover;
+    height: 100% !important;
+}
+.errorMessage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 600;
+    font-size: 22px;
+}
+    </style>
+</head>
+<body>
+    <div class="filte_sections">
+        <div class="filter_controls">
+            <label>
+                <span>
+<!--                     <img
+                    src="http://yachts.routesofdubai.com/wp-content/uploads/2023/10/number-of-guests.svg"
+                    /> -->
+                    NO OF GUESTS
+                    
+                </span>
+                <select id="filter_peopleFilter">
+                    <option value="0,Infinity">All</option>
+                    <option value="0,8">Up to 8 guests</option>
+                    <option value="9,12">9 - 12 guests</option>
+                    <option value="13,16">13 - 16 guests</option>
+                    <option value="17,20">17 - 20 guests</option>
+                    <option value="21,25">21 - 25 guests</option>
+                    <option value="25,Infinity">Over 25 guests</option>
+                    
+          </select>
+          
+        </label>
+        <label>
+            <span>
+<!--                 <img
+                src="http://yachts.routesofdubai.com/wp-content/uploads/2023/10/price-range.svg"
+                /> -->
+                PRICE RANGE
+                
+            </span>
+            <select id="filter_priceRange">
+                <option value="0,Infinity">Any Price</option>
+                <option value="0,1500">Under 1500</option>
+                <option value="1500,2500">AED 1500 - AED 2500</option>
+                <option value="2500,4000">AED 2500 - AED 4000</option>
+                <option value="4000,6000">AED 4000 - AED 6000</option>
+                <option value="6000,Infinity">Over AED 6000</option>
+                
+            </select>
+            
+        </label>
+        <label>
+            <span>
+<!--                 <img
+                src="http://yachts.routesofdubai.com/wp-content/uploads/2023/11/noun-yacht-3575404.svg"
+                /> -->
+                YACHT SIZE
+                
+            </span>
+			<select id="filter_sizeFilter">
+                <option value="0,Infinity">All</option>
+                <option value="0,40">Under 40ft</option>
+                <option value="40,50">40ft - 50ft</option>
+                <option value="55,70">55ft - 70ft</option>
+                <option value="75,90">75ft - 90ft</option>
+                <option value="95,110">95ft - 110ft</option>
+                <option value="110,Infinity">Over 110ft</option>
+
+
+        </select>
+        
+    </label>
+    <button onclick="applyFiltersAndSort()">
+        Search
+        <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+    </button>
+</div>
+<span class="errorMessage" id="errorMessage"></span>
+<span class="loader" id="filter_loader_icon"></span>
+<span class="loader loader2" id="filter_loader_icon2"></span>
+<div class="filter_yatchList">
+
+</div>
+</div>
+<script>
+</script>
+<script>
+    // let yachts = [
+        //   {
+            //     image:
+            //       'http://yachts.routesofdubai.com/wp-content/uploads/2023/10/marcin-ciszewski-Zexjl0v3MRU-unsplash.jpg',
+            //     name: 'Princess Yatch',
+        //     price: 1000,
+        //     guests: 15,
+        //     captain: 1,
+        //     crew: 2,
+        //     size: 52,
+        //   },
+        //   {
+        //     image:
+        //       'http://yachts.routesofdubai.com/wp-content/uploads/2023/10/viktor-ritsvall-FWJinfDsIn8-unsplash.jpg',
+        //     name: 'Super Yatch (Sasmi)',
+        //     price: 1600,
+        //     guests: 35,
+        //     captain: 1,
+        //     crew: 2,
+        //     size: 75,
+        //   },
+        //   {
+        //       image:
+        //         'http://yachts.routesofdubai.com/wp-content/uploads/2023/10/viktor-ritsvall-bnVJraYBXkQ-unsplash.jpg',
+        //       name: 'Queen Size Mariam Yatch',
+        //       price: 4000,
+        //       guests: 75,
+        //       captain: 1,
+        //       crew: 2,
+        //       size: 95,
+        //     },
+        //     {
+        //       image:
+        //         'http://yachts.routesofdubai.com/wp-content/uploads/2023/10/ivan-ragozin-o9oQaOGpLz0-unsplash-1.jpg',
+        //       name: 'Speed Boat',
+        //       price: 700,
+        //       guests: 6,
+        //       captain: 1,
+        //       crew: 2,
+        //       size: 33,
+        //     },
+        // ]
+      let yachts = []
+      function filterYachts(yachts, size, guests, filter_priceRange) {
+//         console.log(size,guests,filter_priceRange);
+        return yachts.filter((yacht) => {
+          return (
+            yacht.size <= size[1] &&
+            yacht.size >= size[0] &&
+            yacht.guests <= guests[1] &&
+            yacht.guests >= guests[0] &&
+            yacht.price <= filter_priceRange[1] &&
+            yacht.price >= filter_priceRange[0]
+          )
+        })
+      }
+    
+      function applyFiltersAndSort() {
+        document.getElementById("errorMessage").innerHTML = ""
+        const size =
+          document.getElementById('filter_sizeFilter').value.split(',')
+          .map(Number)
+        const guests =
+          document.getElementById('filter_peopleFilter').value.split(',')
+          .map(Number)
+        const filter_priceRange = document
+          .getElementById('filter_priceRange')
+          .value.split(',')
+          .map(Number)
+    
+        let filteredYachts = filterYachts(yachts, size, guests, filter_priceRange)
+        const yatchList = document.querySelector('.filter_yatchList')
+        yatchList.style.display = "none"
+        document.getElementById("filter_loader_icon2").style.display ="flex"
+        setTimeout(()=>{
+            document.getElementById("filter_loader_icon2").style.display ="none"
+            displayYachts(filteredYachts)
+            yatchList.style.display = "grid"
+        },1000)
+      }
+    
+      function displayYachts(yachtsToShow) {
+		  document.getElementById("filter_loader_icon").style.display="none"
+//         console.log(yachtsToShow);
+        const yatchList = document.querySelector('.filter_yatchList')
+        yatchList.innerHTML = ''
+    
+        const fragment = document.createDocumentFragment()
+        if(yachtsToShow.length===0){
+            document.getElementById("errorMessage").innerHTML = "Sorry No Yachts Available"
+        }
+        else{
+            document.getElementById("errorMessage").innerHTML = ""
+        }
+        yachtsToShow.forEach((yacht,index) => {
+            if(index<6){
+                const yatchDiv = document.createElement('div')
+                yatchDiv.className = 'filter_yatch'
+                yatchDiv.innerHTML = `
+                        <div class="filter_image_div">
+                            <img src="${yacht.image}" alt="${yacht.name}" class="filter_image">
+                        </div>
+                        <div class="filter_contents">
+                            <div class="filter_title">${yacht.name}</div>
+                            <div class="filter_priceDiv">
+                                <p class="filter_price">AED ${yacht.price}<span class="filter_hour">/ hour</span></p>
+                            </div>
+                            <div class="filter_divider"></div>
+                            <div class="filter_ship_details">
+                                <div class="filter_size">
+                                    <img src="http://yachts.routesofdubai.com/wp-content/uploads/2023/11/noun-yacht-3575404.svg" />
+                                    Size: ${yacht.size} ft
+                                </div>
+                                <div class="filter_guests">
+                                    <img src="http://yachts.routesofdubai.com/wp-content/uploads/2023/10/number-of-guests.svg"/>
+                                    Guests: ${yacht.guests}
+                                </div>
+                                <div class="filter_captain">
+                                    <img src="http://yachts.routesofdubai.com/wp-content/uploads/2023/11/noun-captain-5069171.svg"/>
+                                    Captain: ${yacht.captain}
+                                </div>
+                                <div class="filter_crew">
+                                    <img src="http://yachts.routesofdubai.com/wp-content/uploads/2023/11/noun-pilot-6069962.svg"/>
+                                    Crew: ${yacht.crew}
+                                </div>
+                            </div>
+                            <div class="filter_divider"></div>
+                            <div class="filter_actions">
+                                                         <a class="filter_whatsapp" href="https://wa.me/971557557173?text=Hi, I’m looking to hire the ${yacht.name} Yacht in Dubai listed for AED ${yacht.price}/hour. Is it available on…"> <img class="filter_book_now-arrow" src="http://yachts.routesofdubai.com/wp-content/uploads/2023/11/whatsapp.svg"/> Book on WhatsApp</a>
+      
+                            </div>
+                        </div>
+                        `
+          
+                fragment.appendChild(yatchDiv)
+
+            }
+        })
+    
+        yatchList.appendChild(fragment)
+      }
+    
+        async function getData(){
+           
+            await fetch("https://routesofdubai.com/wp-json/wp/v2/yachts?per_page=100").then((res)=>res.json()).then((data)=>{
+                console.log(data)
+                yachts = []
+                data.forEach((item)=>{
+                    // console.log(item);
+                    const yachtItem = {
+                        image:item.acf.image_url,
+                            name:item.acf.name,
+                            price:item.acf.price,
+                            guests: item.acf.guests,
+                            captain: item.acf.captain,
+                            crew: item.acf.crew,
+                            size: item.acf.size,
+                    }
+                    yachts.push(yachtItem)
+                })
+                document.getElementById("filter_loader_icon").style.display ="none"
+                document.getElementById("filter_loader_icon2").style.display ="none"
+
+				// console.log(yachts)
+            })
+           
+          displayYachts(yachts)
+        
+        //     {
+        //     image:
+        //       'http://yachts.routesofdubai.com/wp-content/uploads/2023/10/marcin-ciszewski-Zexjl0v3MRU-unsplash.jpg',
+        //     name: 'Princess Yatch',
+        //     price: 1000,
+        //     guests: 15,
+        //     captain: 1,
+        //     crew: 2,
+        //     size: 52,
+        //   },
+        }
+        // console.log(yachts);
+        // console.log(yachts);
+        //   function filterYachts(yachts, size, guests, filter_priceRange) {
+        //     return yachts.filter((yacht) => {
+        //       return (
+        //         yacht.size <= size &&
+        //         yacht.guests <= guests &&
+        //         yacht.price <= filter_priceRange[1] &&
+        //         yacht.price >= filter_priceRange[0]
+        //       )
+        //     })
+        //   }
+        
+        //   function applyFiltersAndSort() {
+        //     const size =
+        //       parseInt(document.getElementById('filter_sizeFilter').value) || Infinity
+        //     const guests =
+        //       parseInt(document.getElementById('peopleFilter').value) || Infinity
+        //     const filter_priceRange = document
+        //       .getElementById('filter_priceRange')
+        //       .value.split(',')
+        //       .map(Number)
+        
+        //     let filteredYachts = filterYachts(yachts, size, guests, filter_priceRange)
+        //     displayYachts(filteredYachts)
+        //   }
+        
+        //   function displayYachts(yachtsToShow) {
+        //     const yatchList = document.querySelector('.filter_yatchList')
+        //     yatchList.innerHTML = ''
+        
+        //     const fragment = document.createDocumentFragment()
+        
+        //     yachtsToShow.forEach((yacht) => {
+        //       const yatchDiv = document.createElement('div')
+        //       yatchDiv.className = 'filter_yatch'
+        //       yatchDiv.innerHTML = `
+        //               <div>
+        //                   <img src="${yacht.image}" alt="${yacht.name}" class="filter_image">
+        //               </div>
+        //               <div class="filter_contents">
+        //                   <div class="filter_title">${yacht.name}</div>
+        //                   <div class="filter_priceDiv">
+        //                       <p class="filter_price">AED ${yacht.price}<span class="filter_hour">/ hour</span></p>
+        //                   </div>
+        //                   <div class="filter_divider"></div>
+        //                   <div class="filter_ship_details">
+        //                       <div class="filter_size">
+        //                           <img src="http://yachts.routesofdubai.com/wp-content/uploads/2023/10/yacht-size.svg" />
+        //                           Size: ${yacht.size} ft
+        //                       </div>
+        //                       <div class="filter_guests">
+        //                           <img src="http://yachts.routesofdubai.com/wp-content/uploads/2023/10/number-of-guests.svg"/>
+        //                           Guests: ${yacht.guests}
+        //                       </div>
+        //                       <div class="filter_captain">
+        //                           <img src="http://yachts.routesofdubai.com/wp-content/uploads/2023/10/cpatain.svg"/>
+        //                           Captain: ${yacht.captain}
+        //                       </div>
+        //                       <div class="filter_crew">
+        //                           <img src="http://yachts.routesofdubai.com/wp-content/uploads/2023/10/crew.svg"/>
+        //                           Crew: ${yacht.crew}
+        //                       </div>
+        //                   </div>
+        //                   <div class="filter_divider"></div>
+        //                   <div class="filter_actions">
+        //                       <button class="filter_book_now">Book Now <img class="filter_book_now-arrow" src="http://yachts.routesofdubai.com/wp-content/uploads/2023/10/arrow.svg"/></button>
+        //                       <a class="filter_whatsapp" href="https://wa.me/971557557173">Whatsapp <img class="filter_book_now-arrow" src="http://yachts.routesofdubai.com/wp-content/uploads/2023/10/arrow.svg"/></a>
+        //                   </div>
+        //               </div>
+        //               `
+        
+        //       fragment.appendChild(yatchDiv)
+        //     })
+        
+        //     yatchList.appendChild(fragment)
+        //   }
+        
+        //   displayYachts(yachts)
+      window.onload = getData;
+       
+
+    </script>
+</body>
+
+ -->

@@ -1,0 +1,34 @@
+.Container{
+    width: 100%;
+    height: 100%;
+    // padding: 100px 0px;
+    // padding-bottom: 50px;
+    background-image:url("../../assets/images/DimensionBanner.png");
+
+    .Section{
+        width: 100%;
+        height: 100%;
+        max-width: 1300px;
+        margin: auto;
+        .Title{
+            width: 100%;
+            padding-top: 100px;
+            h2{
+                margin: 0;
+                text-align: center;
+                font-size: 50px;
+                font-weight: 400;
+                color: #fff;
+                span{
+                    font-weight: 600;
+                }
+            }
+        }
+        .Cards{
+            padding: 100px 0px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 50px;
+        }
+    }
+}

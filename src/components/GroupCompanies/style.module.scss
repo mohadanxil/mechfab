@@ -1,0 +1,35 @@
+.Container{
+    position: relative;
+    overflow: hidden;
+    .TopHeader{
+        width: 100%;
+        position: absolute;
+        left: 0;top: 0;
+        img{
+            width: 100%;
+
+        }
+
+    }
+    // .SideHeader{
+    //     width: 550px;
+    //     height: 605px;
+    //     background: #1B2351;
+    //     position: absolute;
+    //     transform: translate(-66%, -30%) rotate(30deg);
+    //     left: 0;
+    //     top: 0;
+    // }
+    .Section{
+        max-width: 1100px;
+        margin: auto;
+        padding: 100px 0px;
+        .ListofCompanies{
+            padding-top: 300px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 100px;
+        }
+
+    }
+}

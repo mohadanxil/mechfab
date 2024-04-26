@@ -1,0 +1,57 @@
+.Container{
+        width: 100%;
+        height: 100%;
+        background-color: #C5E6D5;
+        
+    .Section{
+        max-width: 1300px;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .Left{
+            width: 50%;
+            padding: 40px;
+            padding-top: 0;
+            padding-left: 0;
+            p{
+                font-size: 24px;
+                line-height: 35px;
+                margin: 0;
+                padding-right: 66px;
+                font-weight: 400;
+                color: #1B2351;
+            }
+        }
+        .Right{
+            width: 50%;
+            padding: 40px;
+            padding-top: 0;
+            padding-right: 0;
+            position: relative;
+            .ImageOverlay{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 9;
+                background-image: url("../../assets/images/nutlBolt.jpg");
+                opacity: 0.2;
+            }
+            p{
+                position: relative;
+                z-index: 99;
+                font-size: 24px;
+                line-height: 35px;
+                margin: 0;
+                padding-right: 100px;
+                font-weight: 400;
+                color: #1B2351;
+            }
+        }
+    }
+}

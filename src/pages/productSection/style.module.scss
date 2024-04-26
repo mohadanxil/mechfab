@@ -1,0 +1,112 @@
+.Container{
+    .Section{
+        padding: 100px 0px;
+        padding-top: 200px;
+        .Title{
+            max-width: 1100px;
+            margin: auto;
+            h1{
+                font-size: 50px;
+                font-weight: 700;
+                color: #54AC80;
+                text-align: center;
+            }
+        }
+        .Content{
+            max-width: 1100px;
+            margin: auto;
+            p{
+                font-size: 24px;
+                font-weight: 600;
+                color: #1A2350;
+            }
+        }
+        .Divider{
+            max-width: 1100px;
+            margin: auto;
+
+        }
+        .ProductListImage{
+            max-width: 1100px;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .ProductLeftContent{
+            margin: 100px 0px;
+            background: url("../../assets/images/DimensionBanner.png");
+            padding: 75px 0px;
+            .ProductSectionBg{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                max-width: 1100px;
+                margin: auto;
+                gap: 75px;
+                .Left{
+                    width: 100%;
+                    p{
+                        font-size: 25px;
+                        font-weight: 500;
+                        color:#fff;
+                    }
+                }
+                .Right{
+                    width: 100%;
+                    p{
+                        font-size: 25px;
+                        font-weight: 500;
+                        color:#fff;
+                    }
+                }
+            }
+        }
+        .ContentStyle{
+            max-width: 1100px;
+            margin: auto;
+            gap: 50px;
+            display: flex;
+            flex-direction: column;
+            .ContentRow{
+                max-width: 750px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                
+                .ContentRowHead{
+                    font-size: 32px;
+                    font-weight: 600;
+                    color:#1A2350;
+                    margin: 0;
+                }
+                ol{
+                    margin: 0;
+
+                    li{
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: #54AC80;
+                    }
+                }
+                p{
+                    font-size: 24px;
+                font-weight: 600;
+                color: #54AC80;
+                margin: 0;
+                }
+                ul{
+                    margin: 0;
+
+                    li{
+                        font-size: 24px;
+                font-weight: 600;
+                color: #54AC80;
+                    }
+                }
+            }
+        }
+    }
+}

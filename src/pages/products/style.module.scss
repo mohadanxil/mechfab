@@ -1,0 +1,47 @@
+.Container{
+    .Section{
+      
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-bottom: 100px;
+        .Tagline{
+            p{
+                color: #39BCC2;
+                font-size: 16px;
+                margin: 0;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+        }
+        .Title{
+            h2{
+                margin: 0;
+                font-size: 44px;
+                color: #000;
+                font-weight: 500;
+            }
+        }
+        .Description{
+            p{
+                font-size: 22px;
+                color: #000;
+                margin: 0;
+                font-weight: 300;
+            }
+        }
+        .Products{
+            height: 100%;
+            // width: 100%;
+            // display: flex;
+            // flex-direction: row;
+            // flex-wrap: wrap;
+            gap: 30px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            padding: 100px 16px;
+        }
+    }
+}

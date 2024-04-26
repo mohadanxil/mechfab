@@ -1,0 +1,105 @@
+.Container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    .Image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .Section{
+        padding: 80px 80px;
+        width: -webkit-fill-available;
+        height: -webkit-fill-availabler;
+        .Contents{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+            justify-content: center;
+            align-items: flex-start;
+            .Title{
+                position: relative;
+                z-index: 99;
+                h2{
+                    font-size: 25px;
+                    color: #fff;
+                    font-weight: 600;
+                    margin: 0;
+                    span{
+                        font-weight: 600;
+                    }
+    
+                }
+            }
+            position: relative;
+            z-index: 99;
+            .listContents{
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 0px;
+                justify-content: center;
+                align-items: flex-start;
+                padding-left: 0;
+                .row{
+                    color: #fff;
+                    list-style-type: disc;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    gap:10px;
+                    // display: grid;
+                    // align-items: center;
+                    // grid-template-columns: repeat(2,1fr);
+                    .input{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 10px;
+                        min-width: 130px;
+                        max-width: 130px;
+                        span{
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 100%;
+                            background-color: #1A2251;
+                            background-color: #fff;
+                            
+                        }
+                        h2{
+                            font-weight: 400;
+                            font-size: 22px;
+                            // color: #1A2251;
+                            color: #fff;
+                            margin: 0;
+    
+                        }
+                    }
+                    .answer{
+                        p{
+                            font-weight: 600;
+                            font-size: 22px;
+                            color: #1A2251;
+                            color: #fff;
+                            margin: 0;
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

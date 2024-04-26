@@ -1,0 +1,89 @@
+.Container{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    position: relative;
+    background: url("../../assets/images/combined.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-size: cover;
+    padding-bottom: 50px;
+    z-index: 9999;
+    .FadeBar{
+        width: 100%;
+        height: 100px;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        background: linear-gradient(to bottom, white 0%,rgb(255, 255, 255) 20%, rgba(255, 255, 255, 0.918) 40%, rgba(255, 255, 255, 0.873) 50%, rgba(255, 255, 255, 0.771) 60%, rgba(255, 255, 255, 0.621) 70%, transparent 100%);
+    }
+    .Right{
+        position: absolute;
+        right: 0;
+        top: 0;
+        // width: 50%;
+        z-index: 999;
+        // width: 100%;
+            height: 90%;
+        img{
+            object-fit: contain;
+            // width: 100%;
+            height: 90%;
+        }
+    }
+    .Section{
+        max-width: 1300px;
+        padding: 125px 0px;
+        padding-bottom: 275px;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .Left{
+            .LeftSection{
+                position: relative;
+                .TopSection{
+                    position: relative;
+                    img{
+
+                    }
+                    .Title{
+                        word-break: break-all;
+                        position: absolute;
+                        top: -3%;
+                        left: 10%;
+                        font-size: 70px;
+                        color: #fff;
+                        font-weight: 600;
+                        line-height: 70px;
+
+                    }
+                }
+                .Content{
+                    position: absolute;
+                    top: 50%;
+                    left: 10%;
+                    width: 80%;
+                    p{
+                        max-width: 400px;
+                        // color:#FFF;
+                        font-size: 18px;
+                        color: #242754;
+                    }
+                }
+                // .Content{
+                //     p{
+                //         max-width: 350px;
+                //     }
+                // }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,63 @@
+.Container{
+    width: 100%;
+    height: 100%;
+    background-color: #0E1742;
+    .Section{
+        max-width: 1300px;
+        height: 100%;
+        margin: auto;
+        padding: 50px 0px;
+        padding-bottom: 0px;
+        .Title{
+            h2{
+                margin: 0;
+                font-size: 50px;
+                font-weight: 400;
+                color: #fff;
+                span{
+                    font-weight: 600;
+                }
+            }
+        }
+        .materials{
+            padding: 75px 75px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            column-gap:50px;
+            row-gap: 75px;
+            .material{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 20px;
+                .image{
+                    width: 100px;
+                    height: 100px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .head{
+                    p{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 5px;
+                        color: #fff;
+                        font-size: 22px;
+                        white-space: nowrap;
+                        span{
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 100%;
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

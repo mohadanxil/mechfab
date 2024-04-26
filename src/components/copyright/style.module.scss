@@ -1,0 +1,21 @@
+.Container{
+    width: 100%;
+    height: fit-content;
+    padding: 40px 0px;
+    background-color: #C4E5D4;
+    .Section{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            width: fit-content;
+            margin: 0;
+            line-height: 18px;
+            font-size: 20px;
+            font-weight: 200;
+        }
+    }
+
+}

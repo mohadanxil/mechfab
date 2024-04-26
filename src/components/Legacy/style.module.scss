@@ -1,0 +1,69 @@
+.Container{
+    width: 100%;
+    height: 100%;
+    // background: url("../../assets/images/bgImage.png");
+    // background-color: #fff;
+    position: relative;
+//     .Overlay{
+//         position: absolute;
+//         top: 0;
+//         width: 100%;
+//         height: 100%;
+//         left: 0;
+//         background: rgb(96,96,96);
+// background: linear-gradient(180deg, rgba(255,255,255,1) 50%, #C5E6D5 100%);
+// // background: linear-gradient(180deg, rgba(255,255,255,1) 64%, rgba(195,228,211,1) 100%);
+
+//     }
+    .Section{
+        position: relative;
+        z-index: 9999;
+        width: 100%;
+        max-width: 1300px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        
+        .Left{
+            width: 50%;
+            position: relative;
+            z-index: 999999;
+            padding-left: 40px;
+            padding-bottom: 0;
+            .Title{
+                position: relative;
+                h2{
+                    position: relative;
+                    z-index: 9999;
+                    font-weight: 500;
+                    font-size: 45px;
+                    line-height: 55px;
+                    color: #1B2351;
+                    span{
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .Right{
+            width: 50%;
+            height: 750px;
+            .Image{
+                position: absolute;
+                right: 0%;
+                height: 750px;
+                width: 831px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                .ImageOverlay{
+
+                }
+            }
+        }
+    }
+}
