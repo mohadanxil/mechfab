@@ -3,6 +3,10 @@
     height: 100%;
     background-color: #E3F3EB;
     padding: 100px 0px;
+    @media(max-width:764px){
+        padding: 50px 20px;
+        width: -webkit-fill-available;
+    }
     .Section{
         max-width: 1300px;
         width: 100%;
@@ -13,5 +17,9 @@
         align-items: center;
         gap: 100px;
         margin: auto;
+        @media(max-width:764px){
+            flex-direction: column;
+            gap: 20px;
+        }
     }
 }

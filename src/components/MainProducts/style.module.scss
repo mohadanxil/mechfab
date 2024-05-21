@@ -10,6 +10,12 @@
     background-size: cover;
     padding-bottom: 50px;
     z-index: 9999;
+    @media(max-width:764px){
+        min-height: fit-content;
+        height: auto;
+        background-size: auto;
+        
+    }
     .FadeBar{
         width: 100%;
         height: 100px;
@@ -19,6 +25,9 @@
         left: 0;
         z-index: 9999;
         background: linear-gradient(to bottom, white 0%,rgb(255, 255, 255) 20%, rgba(255, 255, 255, 0.918) 40%, rgba(255, 255, 255, 0.873) 50%, rgba(255, 255, 255, 0.771) 60%, rgba(255, 255, 255, 0.621) 70%, transparent 100%);
+        @media(max-width:764px){
+            height: 50px;
+        }
     }
     .Right{
         position: absolute;
@@ -28,6 +37,10 @@
         z-index: 999;
         // width: 100%;
             height: 90%;
+            @media(max-width:764px){
+                display: none;
+                
+            }
         img{
             object-fit: contain;
             // width: 100%;
@@ -45,12 +58,27 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
+        @media(max-width:764px){
+            padding: 50px 20px;
+            width: -webkit-fill-available;
+            
+        }
         .Left{
+            @media(max-width:764px){
+                // padding-top: 30%;
+                
+            }
             .LeftSection{
                 position: relative;
+                width: 100%;
                 .TopSection{
+                    width: 100%;
                     position: relative;
                     img{
+                        @media(max-width:764px){
+                            display: none;
+                            
+                        }
 
                     }
                     .Title{
@@ -62,6 +90,18 @@
                         color: #fff;
                         font-weight: 600;
                         line-height: 70px;
+                        @media(max-width:764px){
+                            position: relative;
+                            font-size: 24px;
+                            width: 100%;
+                            line-height: 28px;
+                            left: unset;
+                            color: #242754;
+                            br{
+                                display: none;
+                            }
+                            
+                        }
 
                     }
                 }
@@ -70,11 +110,23 @@
                     top: 50%;
                     left: 10%;
                     width: 80%;
+                    @media(max-width:764px){
+                       position: relative;
+                       width: 100%;
+                       left: unset;
+
+                        
+                    }
                     p{
                         max-width: 400px;
                         // color:#FFF;
                         font-size: 18px;
                         color: #242754;
+                        @media(max-width:764px){
+                            font-size: 13px;
+                            line-height: 18px;
+                            
+                        }
                     }
                 }
                 // .Content{

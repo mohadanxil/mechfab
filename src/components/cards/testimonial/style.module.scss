@@ -13,6 +13,11 @@
         align-items: center;
         gap: 20px;
         position: relative;
+        @media(max-width:764px){
+            gap: 10px;
+            padding: 20px;
+            padding-bottom: 60px;
+        }
         .QuoteImage{
             width: 60px;
             height: 60px;
@@ -23,6 +28,10 @@
                 text-align: center;
                 color: #1A2251;
                 margin: 0;
+                @media(max-width:764px){
+                    font-size: 13px;
+                    line-height: 18px;
+                }
             }
         }
         .Stars{
@@ -34,6 +43,9 @@
             img{
                 width: 100%;
                 height: 100%;
+                @media(max-width:764px){
+                    width: 75%;
+                }
                 // width: 22px;
                 // height: 22px;
                 // background-color: orange;
@@ -49,6 +61,10 @@
             bottom: 0%;
             left: 50%;
             transform: translate(-50%,50%);
+            @media(max-width:764px){
+                width: 75px;
+                height: 75px;
+            }
             
         }
     }

@@ -18,6 +18,12 @@
         justify-content: space-between;
         align-items: center;
         gap: 70px;
+        @media(max-width:764px){
+            flex-direction: column;
+            gap: 20px;
+            padding: 50px 20px;
+            width: -webkit-fill-available;
+        }
         .left{
             width: 50%;
             padding-top: 200px;
@@ -27,15 +33,30 @@
             flex-direction: column;
             justify-content: flex-end;
             align-items: flex-start;
+            @media(max-width:764px){
+                width: 100%;
+                padding: 25px 0px;
+            }
             // gap: 25px;
             .Title{
+                @media(max-width:764px){
+                    margin-bottom: 10px;
+                }
                 h2{
                     font-size: 50px;
                     font-weight: 400;
                     color: #1B2351;
                     margin: 0;
+                    @media(max-width:764px){
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
                 span{
                     font-weight: 600;
+                    @media(max-width:764px){
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
                 }    
                 }
                 margin-bottom: 25px;
@@ -47,16 +68,27 @@
                 justify-content: center;
                 align-items: flex-start;
                 gap: 0px;
+                @media(max-width:764px){
+                    padding-right: 0px;
+                }
+                
                 p{
                     font-size: 24px;
                     margin: 0;
                     font-weight: 400;
-                    color: #1B2351
+                    color: #1B2351;
+                    @media(max-width:764px){
+                    font-size: 13px;
+                    line-height: 18px;
+                }
                 }
             }
             .Image{
                 width: 100%;
                 height: 100%;
+                @media(max-width:764px){
+                    display: none;
+                }
                 img{
                     width: 100%;
                     height: 100%;
@@ -80,6 +112,11 @@
             padding-top: 160px;
             width: 50%;
             height: 100%;
+            @media(max-width:764px){
+                width: 100%;
+                padding: 50px 0px;
+                padding-top: 0;
+            }
             form{
                 width: 100%;
                 display: flex;
@@ -87,6 +124,10 @@
                 justify-content: center;
                 align-items: flex-start;
                 gap: 30px;
+                @media(max-width:764px){
+                    gap: 15px;
+
+                }
                 .row{
                     width: 100%;
                     display: flex;
@@ -96,6 +137,12 @@
                     align-items: center;
                     display: grid;
                     grid-template-columns: repeat(2,1fr);
+                    @media(max-width:764px){
+                        gap: 15px;
+                    grid-template-columns: repeat(1,1fr);
+
+                        
+                    }
                 }
                 .inputDiv{
                     display: flex;
@@ -104,10 +151,19 @@
                     align-items: flex-start;
                     width: 100%;
                     gap: 10px;
+                    @media(max-width:764px){
+                        gap: 5px;
+                        
+                    }
                     label{
                         font-size: 18px;
                         font-weight: 400;
-                        color: #1B2351
+                        color: #1B2351;
+                        @media(max-width:764px){
+                            font-size: 12px;
+                            line-height: 18px;
+                            
+                        }
                     }
                     input,textarea{
                         // width: 100%;
@@ -118,6 +174,12 @@
                         border: none;
                         outline:none;
                         font-size: 18px;
+                        @media(max-width:764px){
+                            padding: 10px 15px;
+                            font-size: 13px;
+                            line-height: 18px;
+                            
+                        }
                     }
                 }
                 .ActionBtn{
@@ -132,6 +194,11 @@
                         font-weight: 400;
                         background: rgb(46,172,222);
                         background: linear-gradient(90deg, rgba(46,172,222,1) 0%, rgba(86,173,128,1) 100%);
+                        @media(max-width:764px){
+                            font-size: 14px;
+                            line-height: 18px;
+                            padding: 10px 15px;
+                        }
                     }
                 }
             }

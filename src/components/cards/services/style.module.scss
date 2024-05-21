@@ -3,6 +3,7 @@
     
     height: 100%;
     .Section{
+        width: 100%;
         
         position: relative;
         .ImageSection{
@@ -42,21 +43,46 @@
             align-items: center;
             flex-direction: column;
             gap: 15px;
+            @media(max-width:764px){
+                padding: 20px;
+                align-items: flex-start;
+                
+            }
             .Title{
                 margin: 20px;
+                @media(max-width:764px){
+                    margin: 0;
+                    
+                }
+                
                 h2{
                     font-size: 24px;
                     color: #fff;
                     margin: 0;
                     font-weight: 600;
+                    @media(max-width:764px){
+                        font-size: 18px;
+                        line-height: 28px;
+                        
+                    }
                 }
             }
             .list{
                 display: grid;
                 grid-template-columns: repeat(2,1fr);
                 row-gap: 5px;
+                @media(max-width:764px){
+                grid-template-columns: repeat(1,1fr);
+                    
+                    
+                }
                 
                     li{
+                        @media(max-width:764px){
+                            font-size: 13px;
+                            line-height: 18px;
+                            
+                        }
                         span{
                             position: relative;
                             left: -12px;
@@ -67,6 +93,10 @@
                 
             }
             .actionBtn{
+                @media(max-width:764px){
+                    width: 100%;
+                    
+                }
                 button{
                     background: rgb(46,172,222);
                     background: linear-gradient(90deg, rgba(46,172,222,1) 0%, rgba(86,173,128,1) 100%);
@@ -77,6 +107,13 @@
                     font-weight: 400;
                     border-radius: 5px;
                     padding: 10px 30px;
+                    @media(max-width:764px){
+                        font-size: 14px;
+                        line-height: 18px;
+                        padding: 10px 15px;
+                        width: 100%;
+                        
+                    }
                 }
             }
         }

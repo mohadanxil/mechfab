@@ -6,8 +6,11 @@ const Legacy = ()=>{
         <div className={style.Overlay}></div>
             <div className={style.Section}>
             <div className={style.Left}>
-                <div className={style.Title}>
+                <div className={`${style.Title} ${style.FirstTitle}`}>
                     <h2><span>A Legacy </span>of <br></br><span>Innovation</span> <br></br>& Precision</h2>
+                </div>
+                <div className={`${style.Title} ${style.SecondTitle}`}>
+                    <h2><span>A Legacy </span>of <span>Innovation</span> <br></br>& Precision</h2>
                 </div>
             </div>
                 <div className={style.Right}>

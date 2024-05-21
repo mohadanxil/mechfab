@@ -8,6 +8,10 @@
 
     background-size: cover;
     background-repeat: no-repeat;
+    @media(max-width:764px){
+        // min-height: 50vh;
+        height: auto;
+     }
     .Shape{
         // width: 250px;
         // height: 250px;
@@ -25,6 +29,9 @@
         left: 0;
         top: 0;
         transform: rotate(19deg) translate(-84%,7%);
+        @media(max-width:764px){
+            display: none;
+         }
     }
     .ImageOverlay{
         width: 100%;
@@ -47,16 +54,33 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        @media(max-width:764px){
+            padding: 50px 20px;
+            width: -webkit-fill-available;
+            flex-direction: row;
+            
+        }
         .Left{
             padding: 100px 0px;
             height: 100%;
             width: 70%;
             position: relative;
+            @media(max-width:764px){
+                padding: 0;
+                width: 100%;
+                
+            }
             .Image{
                 position: absolute;
                 left: 25%;
                 top: 20%;
                 z-index: 999;
+                @media(max-width:764px){
+                    position: relative;
+                    left: 0;
+                    top: 0;
+                    
+                }
                 .Content{
                     max-width: 550px;
                     width: 100%;
@@ -65,13 +89,30 @@
                     top: 0%;
                     transform:translate(20%,35%);
                     left: 0;
+                    @media(max-width:764px){
+                       transform: none;
+                       height: auto;
+                       position: relative;
+                       max-width: 100%;
+                        
+                    }
                     p{
                         font-size: 18px;
                         color: #fff;
+                        @media(max-width:764px){
+                            font-size: 13px;
+                            line-height: 18px;
+                            
+                        }
                     }
                 }
                 img{
                     opacity: 0.8;
+                    @media(max-width:764px){
+                        width: 100%;
+                        display: none;
+                        
+                    }
 
                 }
             
@@ -83,6 +124,14 @@
                 top: 0%;
                 transform:translate(20%,-15%);
                 left: 0;
+                @media(max-width:764px){
+                    font-size: 24px;
+                    position: relative;
+                    line-height: 28px;
+                    transform: none;
+                    margin: 0;
+                    
+                }
 
     
                 }
@@ -92,6 +141,10 @@
             width: 100%;
             height: 100%;
             position: relative;
+            @media(max-width:764px){
+                display: none;
+                
+            }
             img{
                 width: fit-content;
                 position: absolute;

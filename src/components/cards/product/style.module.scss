@@ -13,11 +13,18 @@
             .Image{
                 width: 100%;
                 height: 121px;
+                @media(max-width:764px){
+                   height: auto;
+                   width: 100%;
+                }
                 img{
                     width: 100%;
                     height: 100%;
                     object-fit: contain;
                 }
+            }
+            @media(max-width:764px){
+                width: 30%;
             }
         }
         .Right{
@@ -26,6 +33,9 @@
             justify-content: space-between;
             align-items: flex-start;
             gap: 15px;
+            @media(max-width:764px){
+                width: 100%;
+            }
             .Title{
                 width: 100%;
                 height: 100%;
@@ -40,9 +50,17 @@
                     justify-content: center;
                     align-items: flex-start;
                     line-height: 30px;
+                    @media(max-width:764px){
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
                     // gap: 5px;
                     span{
                         font-weight: 600;
+                        @media(max-width:764px){
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
 
                     }
                 }
@@ -60,6 +78,11 @@
                     font-size: 22px;
                     line-height: 18px;
                     font-weight: 400;
+                    @media(max-width:764px){
+                        font-size: 14px;
+                        line-height: 16px;
+                        padding: 10px 15px;
+                    }
                 }
             }
         }
