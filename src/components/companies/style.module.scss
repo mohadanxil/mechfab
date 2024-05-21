@@ -10,14 +10,27 @@
         height: fit-content;
         margin: auto;
         padding-top: 30px;
+        @media(max-width:764px){
+            padding: 50px 20px;
+        }
         .Title{
             h2{
                 font-size: 47px;
                 color: #1A2251;
                 margin: 0;
                 font-weight: 400;
+                @media(max-width:764px){
+                    font-size: 24px;
+                    line-height: 32px;
+                    display: flex;
+                    gap: 5px;
+                }
                 span{
                     font-weight: 600;
+                    @media(max-width:764px){
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
                 }
             }
         }
@@ -29,6 +42,12 @@
             gap: 40px;
             width: 100%;
             height: fit-content;
+            @media(max-width:764px){
+                padding-top: 20px;
+            grid-template-columns: repeat(1,1fr);
+            gap: 20px;
+            padding: 20px 0px;
+            }
             
         }
     }

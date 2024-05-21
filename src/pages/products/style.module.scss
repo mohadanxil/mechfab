@@ -7,6 +7,10 @@
         justify-content: flex-start;
         align-items: flex-start;
         padding-bottom: 100px;
+        @media(max-width:764px){
+           gap: 0;
+            
+        }
         .Tagline{
             p{
                 color: #39BCC2;
@@ -22,6 +26,11 @@
                 font-size: 44px;
                 color: #000;
                 font-weight: 500;
+                @media(max-width:764px){
+                    font-size: 18px;
+                    line-height: 24px;
+                    
+                }
             }
         }
         .Description{

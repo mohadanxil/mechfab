@@ -6,21 +6,35 @@
     background-image:url("../../assets/images/DimensionBanner.png");
 
     .Section{
-        width: 100%;
+        width: -webkit-fill-available;
         height: 100%;
         max-width: 1300px;
         margin: auto;
+        @media(max-width:764px){
+            padding: 50px 20px;
+        }
         .Title{
             width: 100%;
             padding-top: 100px;
+            @media(max-width:764px){
+                padding: 0;
+            }
             h2{
                 margin: 0;
                 text-align: center;
                 font-size: 50px;
                 font-weight: 400;
                 color: #fff;
+                @media(max-width:764px){
+                    font-size: 24px;
+                    line-height: 32px;
+                }
                 span{
                     font-weight: 600;
+                    @media(max-width:764px){
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
                 }
             }
         }
@@ -29,6 +43,11 @@
             display: grid;
             grid-template-columns: repeat(2,1fr);
             gap: 50px;
+            @media(max-width:764px){
+                gap: 15px;
+                padding: 25px 0px;
+                grid-template-columns: repeat(1,1fr);
+            }
         }
     }
 }

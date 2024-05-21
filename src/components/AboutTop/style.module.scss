@@ -10,6 +10,7 @@
     background: url("../../assets/images/AboutBg2.png");
         width: 100%;
         .Overlay{
+          
             width: 100%;
             z-index: 99;
             position: absolute;
@@ -28,6 +29,9 @@
         }
         .LegacyPara{
             margin-top: -100px;
+            @media(max-width:764px){
+                margin-top: 0px;
+            }
         }
     }
 }

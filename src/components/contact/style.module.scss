@@ -18,6 +18,11 @@
         font-family: "Kanit";
         font-weight: 300;
     }
+    @media(max-width:764px){
+        padding: 50px 20px;
+        width: -webkit-fill-available;
+        
+    }
     .Section{
         position: relative;
         z-index: 9;
@@ -29,6 +34,12 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        @media(max-width:764px){
+            flex-direction: column;
+            margin: 0;
+            width: 100%;
+            
+        }
         .left{
             width: 50%;
             height: 100%;
@@ -37,12 +48,22 @@
             justify-content: center;
             align-items: flex-start;
             gap: 15px;
+            @media(max-width:764px){
+                width: 100%;
+                margin-bottom: 25px;
+                
+            }
             .Title{
                 h2{
                     font-size: 50px;
                     font-weight: 300;
                     color: #1B2351;
                     margin: 0;
+                    @media(max-width:764px){
+                        font-size: 24px;
+                        line-height: 32px;
+                        
+                    }
                 span{
                     font-weight: 600;
                 }    
@@ -55,10 +76,19 @@
                 justify-content: center;
                 align-items: flex-start;
                 gap: 0px;
+                @media(max-width:764px){
+                    padding-right: 0;
+                    
+                }
                 p{
                     font-size: 24px;
                     margin: 0;
-                    color: #1B2351
+                    color: #1B2351;
+                    @media(max-width:764px){
+                        font-size: 13px;
+                        line-height: 18px;
+                        
+                    }
                 }
             }
             // display: flex;
@@ -76,6 +106,10 @@
         .right{
             width: 50%;
             height: 100%;
+            @media(max-width:764px){
+               width: 100%;
+                
+            }
             form{
                 width: 100%;
                 display: flex;
@@ -83,6 +117,10 @@
                 justify-content: center;
                 align-items: flex-start;
                 gap: 30px;
+                @media(max-width:764px){
+                    gap: 15px;
+                    
+                }
                 .row{
                     width: 100%;
                     display: flex;
@@ -92,6 +130,12 @@
                     align-items: center;
                     display: grid;
                     grid-template-columns: repeat(2,1fr);
+                    @media(max-width:764px){
+                        gap: 15px;
+                        grid-template-columns: repeat(1,1fr);
+                        
+                        
+                    }
                 }
                 .inputDiv{
                     display: flex;
@@ -100,10 +144,19 @@
                     align-items: flex-start;
                     width: 100%;
                     gap: 10px;
+                    @media(max-width:764px){
+                        gap: 5px;
+                        
+                    }
                     label{
                         font-size: 18px;
                         font-weight: 500;
-                        color: #1B2351
+                        color: #1B2351;
+                        @media(max-width:764px){
+                            font-size: 13px;
+                            line-height: 18px;
+                            
+                        }
                     }
                     input,textarea{
                         // width: 100%;
@@ -114,6 +167,12 @@
                         border: none;
                         outline:none;
                         font-size: 18px;
+                        @media(max-width:764px){
+                            padding: 10px 15px;
+                            font-size: 13px;
+                            line-height: 18px;
+                            
+                        }
                         &::-webkit-input-placeholder{
                             font-weight: 400;
                             color: #9ea1a9;
@@ -132,6 +191,12 @@
                         font-weight: 500;
                         background: rgb(46,172,222);
                         background: linear-gradient(90deg, rgba(46,172,222,1) 0%, rgba(86,173,128,1) 100%);
+                        @media(max-width:764px){
+                            font-size: 13px;
+                            line-height: 18px;
+                            padding: 10px 20px;
+                            
+                        }
                     }
                 }
             }

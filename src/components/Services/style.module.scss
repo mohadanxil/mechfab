@@ -4,6 +4,11 @@
     background: linear-gradient(90deg, rgba(46,172,222,1) 0%, rgba(86,173,128,1) 100%);
     padding: 75px 200px;
     padding-bottom: 100px;
+    @media(max-width:764px){
+        padding: 50px 20px;
+        width: -webkit-fill-available;
+        
+    }
     .Section{
         max-width: 1300px;
         margin: auto;
@@ -14,12 +19,22 @@
     justify-content: center;
     align-items: flex-start;
     gap: 50px;
+    @media(max-width:764px){
+        gap: 20px;
+        
+    }
+   
     .Title{
         h2{
             margin: 0;
             color: #1B2351;
             font-size: 50px;
             font-weight: 600;
+            @media(max-width:764px){
+                font-size: 24px;
+                line-height: 32px;
+                
+            }
         }
     }
     .Cards{
@@ -28,6 +43,12 @@
         grid-template-columns: repeat(2,1fr);
         gap: 30px;
         padding-bottom: 75px;
+        @media(max-width:764px){
+            grid-template-columns: repeat(1,1fr);
+            gap: 15px;
+            padding-bottom: 25px;
+            
+        }
     }
 }
 }
