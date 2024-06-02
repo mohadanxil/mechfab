@@ -56,6 +56,7 @@
                         line-height: 32px;
                         position: relative;
                         transform: none;
+                        width: 100%;
                         
                     }
                     h1{
@@ -115,6 +116,7 @@
                 @media(max-width:764px){
                     position: relative;
                     transform: none;
+                    padding-right: 25px;
                          
                          
                      }
@@ -231,18 +233,20 @@
             }
             .Content{
                 position: absolute;
-                top: 0;
+                top: 100%;
                 right: 0;
-                transform: translate(35%,125%);
+                transform: translate(35%,-100%);
                 @media(max-width:764px){
                     position: relative;
                     transform: none;
+                    top: 0;
                          
                          
                      }
                 p{
                     max-width: 65%;
                     word-wrap: break-word;
+                    font-size: 18px;
                     @media(max-width:764px){
                         font-size: 13px;
                         line-height: 18px;

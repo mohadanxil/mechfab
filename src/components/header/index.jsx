@@ -55,7 +55,7 @@ const Header =()=>{
                     <ul>
                     {menu?.map((nav)=>{
                         return(
-                        <li style={{color:color?"#fff":color}} key={nav.id} onClick={()=>{
+                        <li style={{color:color?"#000":"#000"}} key={nav.id} onClick={()=>{
                             navigate(nav.slug)
                             setHamBurger(false)
                         }}>{nav.name}</li>
@@ -71,16 +71,16 @@ const Header =()=>{
                 <div className={style.Logo}>
                     <img src={Logo} alt="" />
                 </div>
-                <div className={style.HamBurger} onClick={()=>{
+                <div style={{color:color?"#FFF":"#000"}} className={style.HamBurger} onClick={()=>{
                     setHamBurger(HamBurger?false:true)
                 }}>
-                <IoMenu />
+                <IoMenu/>
                 </div>
                 <div className={style.Menu}>
                     <ul>
                     {menu?.map((nav)=>{
                         return(
-                        <li style={{color:color?"#fff":color}} key={nav.id} onClick={()=>{
+                        <li style={{color:color?"#FFF":"#000"}} key={nav.id} onClick={()=>{
                             navigate(nav.slug)
                         }}>{nav.name}</li>
 

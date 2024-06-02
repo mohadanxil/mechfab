@@ -9,6 +9,9 @@
         justify-content: flex-start;
         align-items: center;
         gap: 30px;
+        @media(max-width:764px){
+            justify-content: center;
+         }
         .Left{
             .Image{
                 width: 100%;
@@ -24,7 +27,7 @@
                 }
             }
             @media(max-width:764px){
-                width: 30%;
+                width: 20%;
             }
         }
         .Right{
@@ -34,7 +37,7 @@
             align-items: flex-start;
             gap: 15px;
             @media(max-width:764px){
-                width: 100%;
+                width: fit-content;
             }
             .Title{
                 width: 100%;
@@ -53,6 +56,7 @@
                     @media(max-width:764px){
                         font-size: 16px;
                         line-height: 20px;
+                        margin-bottom: 0 !important;
                     }
                     // gap: 5px;
                     span{
