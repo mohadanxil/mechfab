@@ -8,11 +8,13 @@ import ContactPage from './pages/contact';
 import Header from './components/header';
 import Footer from './components/footer';
 import ProductSection from './pages/productSection';
+import ScrollToTop from './components/scrollToTop';
 
 function App() {
    return (
     <div>
       <BrowserRouter>
+      <ScrollToTop/>
         <Header/>
         <Routes>
           <Route path="/" element={<Home/>}/>

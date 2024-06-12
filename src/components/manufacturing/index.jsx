@@ -13,22 +13,16 @@ const Manufacturing = () => {
           <div className={style.description}>
           <ul>
             <li>
-              Originating as a precision machine shop, Mec Fab has evolved into
-              a comprehensive metal processing setup.
+            Originating as a precision machine shop, Mec Fab has evolved into a comprehensive metal processing setup.
             </li>
             <li>
-              Proficient in fabrication, machining, and assembly, we provide
-              customers the flexibility to choose any or all services they
-              require.
+            Proficient in fabrication, machining, and assembly, we provide customers the flexibility to choose any or all services they require
             </li>
             <li>
-              Expertise in working with materials like Alloy Steels, Stainless
-              Steels, Aluminium, Titanium, and special steels such as 690QL and
-              Inconel.
+            Expertise in working with materials like Alloy Steels, Stainless Steels, Aluminium, Titanium, and special steels such as S690QL and Inconel.
             </li>
             <li>
-              Our skilled team offers tailored solutions to meet diverse
-              outsourcing requirements.
+            Our skilled team offers tailored solutions to meet diverse outsourcing requirements.
             </li>
 
           </ul>

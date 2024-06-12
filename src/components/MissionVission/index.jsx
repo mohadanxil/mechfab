@@ -17,9 +17,7 @@ function MissionVission() {
                     </div>
                 </div>
                 <div className={style.Content}>
-                    <p>In a competitive landscape,, we stand ve landscape,, we stand In a competitive landscape,, we stand ve landscape,, we stand
-In a competitive landscape,, we stand ve landscape,, we stand
-In a competitive landscape,, we stand ve landscape,, we stand</p>
+                    <p>In a competitive landscape, we stand out as a beacon of excellence. We set ourselves apart by offering a complete package – from sourcing raw materials to manufacturing and electroplating. Your search for a reliable partner ends here with us.</p>
                 </div>
             </div>
             <div className={style.Right}>
@@ -31,9 +29,7 @@ In a competitive landscape,, we stand ve landscape,, we stand</p>
                     </div>
                 </div>
                 <div className={style.Content}>
-                    <p>In a competitive landscape,, we stand ve landscape,, we stand In a competitive landscape,, we stand ve landscape,, we stand
-In a competitive landscape,, we stand ve landscape,, we stand
-In a competitive landscape,, we stand ve landscape,, we stand</p>
+                    <p>Our mission revolves around one simple goal: growth. We aim to grow within our industry and explore new opportunities.</p>
                 </div>
             </div>
         </div>

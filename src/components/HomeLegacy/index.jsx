@@ -15,16 +15,7 @@ const HomeLegacy = ()=>{
                         <h2>A Legacy of<span> Innovation <br></br>& Precision</span></h2>
                     </div>
                     <div className={style.Content}>
-                        <p>In the vibrant tapestry of engineering
-excelence, Mec Fab Engineering Works Pvt.
-Ltd. stands as a beacon of innovation.
-a testament to the vision of our founder.
-Mr. Ravi Snankar Seth. in 1979, lueled by
-apessicn cor cngineering and arred wiln
-years of expononce in an MSME company.
-Mi Seth emberked on a transiormative
-Journey. What began as a modest rental manu lacturing unitin Mumbai has evolved into a dynamic force, boasting two
-companies in Naw Mumbal</p>
+                        <p>In the vibrant tapestry of engineering excellence, Mec Fab Engineering Works Pvt. Ltd. stands as a beacon of innovation, a testament to the vision of our founder, Mr. Ravi Shankar Seth. In 1979, fueled by a passion for engineering and armed with years of experience in an MSME company, Mr. Seth embarked on a transformative journey. What began as a modest rental manufacturing unit in Mumbai has evolved into a dynamic force, boasting two companies in Navi Mumbai.</p>
                     </div>
                     <div className={style.ActionBtn}>
                         <button>Read more</button>

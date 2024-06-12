@@ -112,7 +112,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                transform: translate(5%,125%);
+                transform: translate(0%, 125%);
                 @media(max-width:764px){
                     position: relative;
                     transform: none;
@@ -233,9 +233,9 @@
             }
             .Content{
                 position: absolute;
-                top: 100%;
+                bottom: 0%;
                 right: 0;
-                transform: translate(35%,-100%);
+                transform: translate(39%,-90%);
                 @media(max-width:764px){
                     position: relative;
                     transform: none;

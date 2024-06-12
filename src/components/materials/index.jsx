@@ -5,28 +5,71 @@ import material3 from '../../assets/images/CuIcon.png';
 import material4 from '../../assets/images/AlIcon.png';
 
 const Materials = ()=>{
+    // const materialData = [
+    //     {
+    //         id:"01",
+    //         title:"Steel",
+    //         image:material1,
+    //     },
+    //     {
+    //         id:"02",
+    //         title:"Stainless Steell",
+    //         image:material2,
+    //     },
+    //     {
+    //         id:"03",
+    //         title:"Copper and Copper Alloys",
+    //         image:material3,
+    //     },
+    //     {
+    //         id:"04",
+    //         title:"Aluminium",
+    //         image:material4,
+    //     }
+    // ]
     const materialData = [
         {
-            id:"01",
-            title:"Steel",
-            image:material1,
+            id: "01",
+            title: "Steel",
+            image: material1,
         },
         {
-            id:"02",
-            title:"Stainless Steell",
-            image:material2,
+            id: "02",
+            title: "Stainless Steel",
+            image: material2,
         },
         {
-            id:"03",
-            title:"Copper and Copper Alloys",
-            image:material3,
+            id: "03",
+            title: "Copper and Copper Alloys",
+            image: material3,
         },
         {
-            id:"04",
-            title:"Aluminium",
-            image:material4,
+            id: "04",
+            title: "Aluminium",
+            image: material4,
+        },
+        {
+            id: "05",
+            title: "Cast Iron",
+            image: null,
+        },
+        {
+            id: "06",
+            title: "Brass, Phosphor Bronze",
+            image: null,
+        },
+        {
+            id: "07",
+            title: "Aluminium and its Alloys",
+            image: null,
+        },
+        {
+            id: "08",
+            title: "Titanium",
+            image: null,
         }
-    ]
+    ];
+    
     return (
         <div className={style.Container}>
             <div className={style.Section}>

@@ -2,6 +2,7 @@ import style from './style.module.scss';
 import { FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import { BsEnvelopeFill } from "react-icons/bs";
 import Logo from '../../assets/images/Logo.png'
+import { Link } from 'react-router-dom';
 const Footer=()=>{
     return(
         <div className={style.Container}>
@@ -64,11 +65,11 @@ T.T.C. Industrial Area, Navi Mumbai
                     <h2>Quick Links</h2>
                 </div>
                     <ul>
-                        <li>Home</li>
-                        <li>About US</li>
-                        <li>Products</li>
-                        <li>Services</li>
-                        <li>Contact Us</li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/about">About US</Link></li>
+                        <li><Link to="/products">Products</Link></li>
+                        <li><Link to="/services">Services</Link></li>
+                        <li><Link to="/contact">Contact Us</Link></li>
                     </ul>
                 </div>
                 <div className={style.Community}>

@@ -11,7 +11,7 @@ const ContactPage =()=>{
 
        
             <div className={style.Section}>
-            <Banner LImage={LImage} RImage={RImage} title='Contact Us' description=' Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit numquam corporis rem ipsam, nobis, asperiores maxime iure similique non temporibus est accusantium quia.' type={"Description"}/>
+            <Banner LImage={LImage} RImage={RImage} title='Contact Us' description='Elevate your engineering solutions with MEC FAB Engineering Works Pvt. Ltd. Reach out today to discuss your project requirements, explore partnership opportunities, or delve into how we can empower your potential for growth and innovation.' type={"Description"}/>
                 <Contact/>
             </div>
         </div>
