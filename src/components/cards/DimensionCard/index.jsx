@@ -1,8 +1,10 @@
 import style from './style.module.scss';
-
-const DimensionCard = ({title,image})=>{
+import {Link} from 'react-router-dom'
+const DimensionCard = ({title,image,url,slug})=>{
     return (
-        <div className={style.Container}>
+        <Link to={`${url}?service=${slug}`} className={style.Container} onClick={()=>{
+                        // navigate("/services")       
+                    }}>
             <div className={style.Section}>
                 <div className={style.Image}>
                     <img src={image} alt="" />
@@ -11,7 +13,7 @@ const DimensionCard = ({title,image})=>{
                     <h2>{title}</h2>
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
 

@@ -10,23 +10,34 @@ const Dimension = ()=>{
     const dimensionData = [
         {
             id:"01",
+            slug:"Manufacturing",
             title:"Manufacturing",
-            image: dimension1
+            image: dimension1,
+            url:"/services"
         },
         {
-            id:"01",
+            id:"02",
+            slug:"Electroplating-Services",
             title:"Electroplating Services",
-            image:dimension2
+            image:dimension2,
+            url:"/services"
+
         },
         {
-            id:"01",
+            id:"03",
+            slug:"Electroplating-Capacity",
             title:"Electroplating Capacity",
-            image:dimension3
+            image:dimension3,
+            url:"/services"
+
         },
         {
-            id:"01",
+            id:"04",
+            slug:"Contact-Manufacturing",
             title:"Contact Manufacturing",
-            image:dimension4
+            image:dimension4,
+            url:"/services"
+
         }
     ]
     return(
@@ -38,7 +49,7 @@ const Dimension = ()=>{
                 <div className={style.Cards}>
                 {dimensionData.map((item)=>{
                     return(
-                        <DimensionCard key={item.id} title={item.title} image={item.image}/>
+                        <DimensionCard key={item.id} title={item.title} image={item.image} url={item?.url} slug={item?.slug}/>
                     )
                 })}
                 </div>

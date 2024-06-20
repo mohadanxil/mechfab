@@ -7,7 +7,26 @@ import ServicePage from '../../components/Services'
 import Materials from '../../components/materials';
 import ProductsSection from '../../components/ProductsSection';
 import BgImage from '../../assets/images/AboutUsBanner.png';
+import { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 const Services = ()=>{
+    const location = useLocation();
+    const service1Ref = useRef(null);
+    const service2Ref = useRef(null);
+    const service3Ref = useRef(null);
+  
+    useEffect(() => {
+      const params = new URLSearchParams(location.search);
+      const scrollTo = params.get('service');
+      console.log(scrollTo)
+      
+      if (scrollTo) {
+        const element = document.getElementById(scrollTo);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }, [location]);
     return (
         <div className={style.Container}>
             <div className={style.Section}>

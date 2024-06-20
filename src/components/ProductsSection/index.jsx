@@ -8,7 +8,7 @@ const ProductsSection = () => {
     <div className={style.Triangle}></div>
       <div className={style.Section}>
         <div className={style.Services}>
-          <div className={style.Service}>
+          <div className={style.Service} id="Electroplating-Capacity">
             <div className={style.Left}>
               <div className={style.Title}>
                 <h3>
@@ -29,7 +29,7 @@ We have in-house calibrated furnaces for HERT (Hydrogen De-embrittlement) with a
               <img src={image} alt="" />
             </div>
           </div>
-          <div className={style.Service}>
+          <div className={style.Service} id="Contact-Manufacturing">
             <div className={style.Right}>
               <img src={image2} alt="" />
             </div>

@@ -24,9 +24,11 @@ const ServiceCard =({image,title,listData,btnText})=>{
                     })}
                     {/* </ul> */}
                 </div>
+                {btnText&&
                 <div className={style.actionBtn}>
                     <button>{btnText}</button>
                 </div>
+                }
                 </div>
             </div>
         </div>

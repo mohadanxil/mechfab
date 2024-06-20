@@ -217,7 +217,7 @@ const ServicePage = ()=>{
     ];
     
     return (
-        <div className={style.Container}>
+        <div className={style.Container} id="Electroplating-Services">
             <div className={style.Section}>
             <div className={style.Title}>
                 <h2>Electroplating</h2>
@@ -225,7 +225,7 @@ const ServicePage = ()=>{
                 <div className={style.Cards}>
                     {listData?.map((item)=>{
                         return(
-                            <ServiceCard title={item.title} listData={item.listContent} image={item.image} btnText="Read More"
+                            <ServiceCard title={item.title} listData={item.listContent} image={item.image} btnText=""
 />
                         )
                     })}

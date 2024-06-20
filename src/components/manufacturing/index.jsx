@@ -2,7 +2,7 @@ import style from "./style.module.scss";
 import Image from '../../assets/images/ServiceIcon.png'
 const Manufacturing = () => {
   return (
-    <div className={style.Container}>
+    <div className={style.Container} id="Manufacturing">
           <div className={style.overlay}></div>
 
       <div className={style.Section}>
